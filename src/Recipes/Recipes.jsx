@@ -16,10 +16,10 @@ export default function Recipes() {
   return (
     <>
       <div className="container">
-        <div className={`row pt-5 ${Style.roww}`}>
+        <div className={`row pt-5 ${Style.roww} gap-1`}>
           {recipes?.map((recipe) => {
             return (
-              <div className={`${Style.bg} col-md-4 p-0 m-1`}>
+              <div className={`${Style.bg} col-md-3 p-0 `}>
                 <img src={recipe.image_url} className="w-100" alt="" />
                 <h4 className="text-center text-white">
                   {recipe.title.split(" ").slice(0, 2).join(" ")}
