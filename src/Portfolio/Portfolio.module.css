@@ -1,0 +1,27 @@
+.icon {
+  position: relative;
+
+  width: 20%;
+  margin-inline: auto;
+}
+.icon::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  background-color: black;
+  bottom: 10px;
+  transform: translateX(20px);
+}
+.icon::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  background-color: black;
+  bottom: 10px;
+  transform: translateX(-120px);
+}
+.modalWidth {
+  width: 300px;
+}

@@ -1,0 +1,45 @@
+.icon {
+  position: relative;
+
+  width: 20%;
+  margin-inline: auto;
+}
+.icon::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  background-color: black;
+  bottom: 10px;
+  transform: translateX(20px);
+}
+.icon::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  background-color: black;
+  bottom: 10px;
+  transform: translateX(-120px);
+}
+input {
+  outline: none;
+  border-color: white;
+  border: 1px solid gainsboro;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+button {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 15px 10px;
+  border-radius: 10px;
+  margin-inline: auto;
+  transition: 0.5s ease-in-out;
+  width: 125px;
+}
+button:hover {
+  background-color: #16a085;
+}

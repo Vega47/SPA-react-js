@@ -1,0 +1,27 @@
+.icon {
+  position: relative;
+
+  width: 20%;
+  margin-inline: auto;
+}
+.icon::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  background-color: white;
+  bottom: 10px;
+  transform: translateX(20px);
+}
+.icon::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  background-color: white;
+  bottom: 10px;
+  transform: translateX(-120px);
+}
+.mainBackGround {
+  background-color: #1abc9c;
+}

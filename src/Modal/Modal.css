@@ -1,0 +1,55 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin: 0 auto;
+}
+
+.close-button {
+  position: absolute;
+  transform: translateY(-2px);
+  right: 0;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #ccc;
+}
+
+.image-caption {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.thumbnail {
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.thumbnail:hover {
+  transform: scale(1.02);
+}
