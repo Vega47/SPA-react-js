@@ -7,6 +7,7 @@ import Contact from "./Contact/Contact";
 import Recipes from "./Recipes/Recipes";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import NotFound from "./NotFound/NotFound";
 
 const router = createBrowserRouter(
   [
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
         { path: "portfolio", element: <Portfolio /> },
         { path: "contact", element: <Contact /> },
         { path: "recipes", element: <Recipes /> },
+        { path: "*", element: <NotFound /> },
       ],
     },
   ],
